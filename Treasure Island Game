@@ -1,0 +1,38 @@
+while True:
+    print()
+    print("--------WELCOME TO TREASURE ISLAND---------")
+    print("Your mission is to find the treasure!!")
+    lr=input("Enter left or right")
+    if lr=='left':
+        print("welcome to the secret chamber...")
+        dc=input("Enter door no.: 1,2")
+        if dc=='2':
+            print("Here's the code to unlock the main chamber door")
+            print("5xy2")
+            d=input("Enter chamber lock key")
+            if d=="5xy2":
+                print("You win!!")
+            else:
+                print("Game Over")
+        else:
+            print("Game Over")
+    else:
+        r=input("Do you wish to swim or wait?")
+        if r=='wait':
+            c=input("Choose door color: red,blue,yellow ")
+            if c=='red':
+                print("Volcanic eruptions, Game over!")
+            elif c=='blue':
+                print("You win!!")
+            elif c=='yellow':
+                print("Eaten by beasts, Game Over!")
+            else:
+                print("Drowned in water, Game Over!")
+        else:
+            print("Attacked by the trots, Game Over!")
+
+    w=input("Do you wish to continue?? y/n")
+    if w=="n":
+        print("Thank You for playing! Hope you had a nice time!")
+        break
+
